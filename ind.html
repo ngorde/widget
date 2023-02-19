@@ -1,6 +1,7 @@
 <div id="widget-container">
   Text: <span class="notranslate">Original text</span>
   <span id="change-indicator"></span>
+  <span id="urd"></span>
 </div>
 
 <script>
@@ -20,4 +21,6 @@
 
   // Set up the MutationObserver to watch for changes to the element with the class "notranslate"
   observer.observe(targetNode, { characterData: true, subtree: true });
+  var ur = location.href;
+  urd.innerHTML = ur
 </script>
